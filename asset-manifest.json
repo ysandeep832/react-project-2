@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/ysandeep832/react-project-2.git/static/css/main.a0d22711.css",
+    "main.js": "/ysandeep832/react-project-2.git/static/js/main.12b5e1fa.js",
+    "reactPlayerPreview.js": "/ysandeep832/react-project-2.git/static/js/reactPlayerPreview.b282ff6a.chunk.js",
+    "static/js/453.3fb769ee.chunk.js": "/ysandeep832/react-project-2.git/static/js/453.3fb769ee.chunk.js",
+    "static/media/no-poster.png": "/ysandeep832/react-project-2.git/static/media/no-poster.de8cb0a7786e6bf2b2de.png",
+    "static/media/avatar.png": "/ysandeep832/react-project-2.git/static/media/avatar.0affc1eeb2b145c80bd1.png",
+    "static/media/movix-logo.png": "/ysandeep832/react-project-2.git/static/media/movix-logo.672c9ef652b566477a1c.png",
+    "static/media/no-results.png": "/ysandeep832/react-project-2.git/static/media/no-results.2d2c6ee352de3daf8a56.png",
+    "index.html": "/ysandeep832/react-project-2.git/index.html",
+    "main.a0d22711.css.map": "/ysandeep832/react-project-2.git/static/css/main.a0d22711.css.map",
+    "main.12b5e1fa.js.map": "/ysandeep832/react-project-2.git/static/js/main.12b5e1fa.js.map",
+    "reactPlayerPreview.b282ff6a.chunk.js.map": "/ysandeep832/react-project-2.git/static/js/reactPlayerPreview.b282ff6a.chunk.js.map",
+    "453.3fb769ee.chunk.js.map": "/ysandeep832/react-project-2.git/static/js/453.3fb769ee.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a0d22711.css",
+    "static/js/main.12b5e1fa.js"
+  ]
+}
