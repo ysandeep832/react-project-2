@@ -1,0 +1,49 @@
+
+.circleRating {
+    width: 40px; /* Adjust the width as needed */
+    height: 40px; /* Adjust the height as needed */
+    position: relative;
+}
+
+/* Styles for the circular progress bar */
+.react-circular-progressbar {
+    width: 100%;
+    height: 100%;
+}
+
+/* Styles for the circular progress bar text */
+.react-circular-progressbar-text {
+    font-size: 14px; /* Adjust font size as needed */
+    fill: #333; /* Text color */
+}
+
+/* Custom styles for different rating ranges */
+/* Example: Red for ratings < 5, Orange for ratings < 7, Green for ratings >= 7 */
+.react-circular-progressbar-path {
+    stroke-linecap: round;
+}
+
+.react-circular-progressbar .CircularProgressbar-path {
+    stroke: #eee;
+    transition: stroke-dashoffset 0.5s ease 0s;
+}
+
+.react-circular-progressbar .CircularProgressbar-trail {
+    stroke: #333;
+}
+
+.react-circular-progressbar .CircularProgressbar-text {
+    fill: #333;
+    font-size: 20px;
+    dominant-baseline: middle;
+    text-anchor: middle;
+}
+
+/* Custom styles for different path colors */
+.react-circular-progressbar-path {
+    transition: stroke-dashoffset 0.5s ease 0s;
+}
+
+.react-circular-progressbar-path {
+    stroke-linecap: round;
+}

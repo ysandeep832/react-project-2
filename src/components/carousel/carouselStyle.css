@@ -1,0 +1,384 @@
+/* .carousel {
+    position: relative;
+    padding: 20px 0;
+}
+
+.carousel .carouselTitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.carousel .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: #333;
+    cursor: pointer;
+    z-index: 1;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.carousel .carouselLeftNav {
+    left: 10px;
+}
+
+.carousel .carouselRighttNav {
+    right: 10px;
+}
+
+.carousel .carouselItems {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 10px;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.carousel .carouselItems .carouselItem {
+    min-width: 200px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+}
+
+.carousel .carouselItems .carouselItem .posterBlock {
+    position: relative;
+    width: 100%;
+    padding-bottom: 150%;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #e4e4e4;
+}
+
+.carousel .carouselItems .carouselItem .posterBlock img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel .carouselItems .carouselItem .posterBlock .circleRating {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.carousel .carouselItems .carouselItem .posterBlock .genres {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.carousel .carouselItems .carouselItem .textBlock {
+    margin-top: 10px;
+}
+
+.carousel .carouselItems .carouselItem .textBlock .title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.carousel .carouselItems .carouselItem .textBlock .date {
+    font-size: 14px;
+    color: #999;
+}
+
+.carousel .loadingSkeleton {
+    display: flex;
+    gap: 20px;
+}
+
+.carousel .loadingSkeleton .skeletonItem {
+    width: 200px;
+}
+
+.carousel .loadingSkeleton .skeletonItem .posterBlock {
+    width: 100%;
+    padding-bottom: 150%;
+    background-color: #e4e4e4;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.carousel .loadingSkeleton .skeletonItem .textBlock .title,
+.carousel .loadingSkeleton .skeletonItem .textBlock .date {
+    width: 100%;
+    height: 20px;
+    background-color: #e4e4e4;
+    border-radius: 4px;
+    margin-bottom: 10px;
+} */
+
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+/* .carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 0;
+   
+}
+
+.carouselTitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: center;
+   
+}
+
+.carouselItems {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 10px;
+}
+
+.carouselItem {
+    flex: 0 0 auto;
+    width: 200px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.carouselItem:hover {
+    transform: scale(1.05);
+}
+
+.posterBlock {
+    position: relative;
+    width: 100%;
+    padding-top: 150%; 
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #e0e0e0;
+}
+
+.posterBlock img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.textBlock {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.textBlock .title {
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+    
+}
+
+.textBlock .date {
+    display: block;
+    font-size: 0.875rem;
+    
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: #555;
+    cursor: pointer;
+    z-index: 10;
+    transition: color 0.3s ease;
+}
+
+.arrow:hover {
+    color: #000;
+}
+
+.carouselLeftNav {
+    left: 10px;
+}
+
+.carouselRighttNav {
+    right: 10px;
+}
+
+.loadingSkeleton {
+    display: flex;
+    gap: 20px;
+}
+
+.skeletonItem {
+    flex: 0 0 auto;
+    width: 200px;
+}
+
+.skeleton {
+   
+    border-radius: 10px;
+}
+
+.posterBlock.skeleton {
+    padding-top: 150%; 
+}
+
+.textBlock .title.skeleton,
+.textBlock .date.skeleton {
+    height: 20px;
+    margin-top: 10px;
+} */
+
+
+
+
+/* carouselStyle.css */
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.carouselTitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.carouselItems {
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll; /* Changed from auto to scroll */
+    scroll-behavior: smooth;
+    padding-bottom: 10px;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.carouselItems::-webkit-scrollbar {
+    display: none;  /* Safari and Chrome */
+}
+
+.carouselItem {
+    flex: 0 0 auto;
+    width: 200px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.carouselItem:hover {
+    transform: scale(1.05);
+}
+
+.posterBlock {
+    position: relative;
+    width: 100%;
+    padding-top: 150%; 
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #e0e0e0;
+}
+
+.posterBlock img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.textBlock {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.textBlock .title {
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.textBlock .date {
+    display: block;
+    font-size: 0.875rem;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: #555;
+    cursor: pointer;
+    z-index: 10;
+    transition: color 0.3s ease;
+}
+
+.arrow:hover {
+    color: #000;
+}
+
+.carouselLeftNav {
+    left: 10px;
+}
+
+.carouselRighttNav {
+    right: 10px;
+}
+
+.loadingSkeleton {
+    display: flex;
+    gap: 20px;
+}
+
+.skeletonItem {
+    flex: 0 0 auto;
+    width: 200px;
+}
+
+.skeleton {
+    border-radius: 10px;
+}
+
+.posterBlock.skeleton {
+    padding-top: 150%; 
+}
+
+.textBlock .title.skeleton,
+.textBlock .date.skeleton {
+    height: 20px;
+    margin-top: 10px;
+}
+

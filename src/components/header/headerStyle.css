@@ -1,0 +1,130 @@
+
+
+ .header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+    background-color: #333;
+    color: #fff;
+}
+
+.header.hide {
+    transform: translateY(-100%);
+}
+
+.header.show,
+.header.top {
+    transform: translateY(0);
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header .logo img {
+    height: 60px;
+}
+
+.header .menuItems {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.header .menuItems .menuItem {
+    margin: 0 15px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+   
+    justify-content: space-between;
+}
+
+.nav_setting {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .menuItems .menuItem svg {
+    margin-left: 5px;
+}
+
+.header .menuItems .menuItem:hover {
+    /* color: #1e90ff; */
+    color: tomato;
+}
+
+.header .mobileMenuItems {
+    display: none;
+    align-items: center;
+}
+
+.header .mobileMenuItems svg {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .header .mobileMenuItems {
+        display: flex;
+    }
+}
+
+.header .searchBar {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+}
+
+.header .searchBar .searchInput {
+    display: flex;
+    align-items: center;
+}
+
+.header .searchBar .searchInput input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+}
+
+.header .searchBar .searchInput svg {
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 10px;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .header .menuItems {
+        display: none;
+    }
+
+    .header.mobileView .menuItems {
+        display: flex;
+        flex-direction: column;
+        background-color: #333;
+        position: fixed;
+        top: 60px;
+        left: 0;
+        right: 0;
+        padding: 20px 0;
+        border-top: 1px solid #444;
+    }
+
+    .header.mobileView .menuItems .menuItem {
+        margin: 10px 0;
+    }
+} 
+
+
+

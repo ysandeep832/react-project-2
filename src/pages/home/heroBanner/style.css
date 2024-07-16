@@ -1,0 +1,199 @@
+
+
+/* .heroBanner {
+    position: relative;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+
+    .backdrop-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .opacity-layer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 1;
+    }
+
+    .heroBannerContent {
+        position: relative;
+        z-index: 2;
+
+        .title {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .subTitle {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .searchInput {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            input {
+                width: 300px;
+                padding: 10px 15px;
+                border: none;
+                border-radius: 30px 0 0 30px;
+                font-size: 16px;
+                outline: none;
+            }
+
+            button {
+                padding: 10px 20px;
+                border: none;
+                border-radius: 0 30px 30px 0;
+                background-color: #e50914;
+                color: #fff;
+                font-size: 16px;
+                cursor: pointer;
+                outline: none;
+            }
+
+            input:focus,
+            button:focus {
+                outline: none;
+            }
+        }
+    }
+} */
+
+
+/* style.css */
+.heroBanner {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.heroBanner .backdrop-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.heroBanner .backdrop-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(0.5);
+}
+
+.heroBanner .opacity-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.8) 100%);
+    z-index: 2;
+}
+
+.heroBannerContent {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+}
+
+.heroBannerContent .title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.heroBannerContent .subTitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.heroBannerContent .searchInput {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.heroBannerContent .searchInput input {
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    font-size: 1rem;
+}
+
+.heroBannerContent .searchInput button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    background-color: tomato;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.heroBannerContent .searchInput button:hover {
+    background-color: #e74c3c;
+}
+
+@media (max-width: 768px) {
+    .heroBanner {
+        height: 50vh;
+    }
+
+    .heroBannerContent .title {
+        font-size: 2rem;
+    }
+
+    .heroBannerContent .subTitle {
+        font-size: 1.2rem;
+    }
+
+    .heroBannerContent .searchInput {
+        width: 100%;
+    }
+
+    .heroBannerContent .searchInput input, .heroBannerContent .searchInput button {
+        font-size: 0.9rem;
+    }
+}
+
